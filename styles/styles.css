@@ -80,30 +80,54 @@ iframe {
   height: 20rem;
 }
 
-@media screen and (min-width: 1000px) {
+@media screen and (min-width: 1064px) {
   html {
     background-color: aliceblue;
   }
 
   html {
-    font-size: 20px;
+    font-size: 25px;
   }
   header {
-    width: 72rem;
+    width: 95%;
   }
-  button {
+  header button {
+    float: right;
     padding: 0.5rem 2rem;
-    margin: auto;
   }
   section {
-    width: 100%;
+    width: 95%;
   }
-  h2 {
+  section h2 {
+    float: left;
     display: inline-block;
-    width: 10rem;
+    box-sizing: content-box;
+    width: 33%;
+    padding: 3rem 1rem;
+    padding-bottom: 3rem;
+    margin: 0px;
+  }
+  aside {
+    float: left;
+    margin: 0.5rem;
+    width: 55%;
+  }
+  section button {
+    display: inline-block;
+    margin: 0.5rem;
+    padding: 1rem;
   }
   p {
     display: inline-block;
-    width: 20rem;
+    width: 57%;
+    margin: 0;
+  }
+  iframe {
+    display: inline-block;
+    width: 62%;
+    height: 30rem;
+  }
+  footer {
+    width: 97%;
   }
 }
