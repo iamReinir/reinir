@@ -69,6 +69,10 @@ aside {
   padding: 1rem;
 }
 
+aside {
+  background-image: linear-gradient(to right, #1f1e33, #1e9199);
+}
+
 a {
   text-decoration: none;
   color: red;
@@ -78,6 +82,10 @@ iframe {
   display: block;
   width: 32rem;
   height: 20rem;
+}
+
+img {
+  width: 32rem;
 }
 
 @media screen and (min-width: 1064px) {

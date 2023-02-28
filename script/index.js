@@ -15,10 +15,16 @@ let videos = [
 
 function changeVideo() {
   var video = document.getElementById("video");
-  video.src = videos[rng(0, 11)];
+  video.src = videos[rng(0, videos.length() - 1)];
   video.console.log("Video changed");
 }
 
 function rng(min, max) {
   return Math.floor(Math.random() * (max - min + 1)) + min;
+}
+
+let urls = ["hollowKnight.html"];
+
+function randomMove() {
+  window.open(urls[rng(0, urls.length - 1)]);
 }
