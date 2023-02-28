@@ -25,15 +25,19 @@ header {
 }
 
 button {
+  display: inline-block;
   background-color: rgb(240, 248, 255);
-  padding: 10px 5%;
+  padding: 30px 10rem;
   border-radius: 7px;
   font-weight: bold;
-  font-size: 0.75rem;
+  font-size: 1rem;
 }
 
 header button {
   margin: auto;
+}
+section button {
+  margin: 3rem;
 }
 button:hover {
   background-color: #d3d1d1;
@@ -61,7 +65,8 @@ p,
 aside {
   border-radius: 10px;
   background-image: linear-gradient(to right, #1f1e33, #1f1e99);
-  width: 32rem;
+  width: 30rem;
+  padding: 1rem;
 }
 
 a {
@@ -75,5 +80,30 @@ iframe {
   height: 20rem;
 }
 
-@media screen and (min-width: 400px) {
+@media screen and (min-width: 600px) {
+  html {
+    background-color: aliceblue;
+  }
+
+  html {
+    font-size: 20px;
+  }
+  header {
+    width: 72rem;
+  }
+  button {
+    padding: 0.5rem 2rem;
+    margin: auto;
+  }
+  section {
+    width: 100%;
+  }
+  h2 {
+    display: inline-block;
+    width: 10rem;
+  }
+  p {
+    display: inline-block;
+    width: 20rem;
+  }
 }
