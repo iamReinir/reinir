@@ -2,6 +2,7 @@
 <head>
   <meta charset="utf-8" />
   <link rel="stylesheet" href="styles/styles.css" />
+  <script src="script/index.js"></script>
   <title>Reinir</title>
 </head>
 <body>
@@ -29,12 +30,13 @@
       to another song.
     </aside>
     <iframe
-      src="https://www.youtube.com/embed/ZhJDGJq2R6c?&autoplay=1"
-      title="【Glitch Hop】Aerion - Into the Night [PREMIERE]"
+      id="video"
+      src="https://www.youtube.com/embed/ZhJDGJq2R6c"
+      title="My music!"
       allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
       allowfullscreen
     ></iframe>
-    <button>Randomize</button>
+    <button onclick="changeVideo()">Randomize</button>
   </section>
   <footer>
     <h2>My contact information</h2>
