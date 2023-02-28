@@ -1,0 +1,79 @@
+html {
+  font-size: 40px;
+}
+body {
+  background-color: #1f1e33;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  color: #f2f2f5;
+  padding: 0;
+}
+
+header {
+  background-color: #1f1e88;
+  background-image: url("../image/ExaVidThumbnail.jpg");
+  background-position-x: 100%;
+  background-position-y: 60%;
+  background-size: 250%;
+  display: inline-block;
+  text-align: center;
+  padding: 20px;
+  margin: 0px;
+  width: 36rem;
+  height: 13rem;
+  overflow: auto;
+}
+
+button {
+  background-color: rgb(240, 248, 255);
+  padding: 10px 5%;
+  border-radius: 7px;
+  font-weight: bold;
+  font-size: 0.75rem;
+}
+
+header button {
+  margin: auto;
+}
+button:hover {
+  background-color: #d3d1d1;
+  transition-timing-function: linear;
+  transition-duration: 100ms;
+}
+
+section {
+  text-align: left;
+  padding: 2rem;
+  padding-top: 3rem;
+  width: 32rem;
+}
+
+footer {
+  text-align: center;
+  font-size: 0.75rem;
+  width: 36rem;
+}
+h1,
+h2 {
+  text-align: center;
+}
+p,
+aside {
+  border-radius: 10px;
+  background-image: linear-gradient(to right, #1f1e33, #1f1e99);
+  width: 32rem;
+}
+
+a {
+  text-decoration: none;
+  color: red;
+}
+
+iframe {
+  display: block;
+  width: 32rem;
+  height: 20rem;
+}
+
+@media screen and (min-width: 400px) {
+}
