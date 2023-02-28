@@ -86,13 +86,17 @@ iframe {
 
 img {
   width: 32rem;
+  margin: auto;
+}
+
+header p {
+  margin: auto;
 }
 
 @media screen and (min-width: 1064px) {
   html {
     background-color: aliceblue;
   }
-
   html {
     font-size: 25px;
   }
