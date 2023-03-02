@@ -1,59 +1,133 @@
 <!DOCTYPE html>
-<head>
-  <meta charset="utf-8" />
-  <title>Reinir</title>
-  <link rel="stylesheet" href="styles/styles.css" />
-</head>
-<body>
-  <header>
-    <h1>Hello. Reinir here.</h1>
-    <p>I like to play video game, so to today I will introduce you to...</p>
-  </header>
-  <img
-    src="image/hollowKnight/whoLikeHOLLOWKNIGHT.png"
-    alt="Hollow Knight banner"
-  />
-  <section>
-    <h2>Hollow Knight.</h2>
-    <img src="image/hollowKnight/theKnight.png" alt="the knight on a bench" />
-    <p>
-      It's a small indie Metroidvania game make by Team Cherry, pulished in
-      2017.
-    </p>
-    <aside>
-      For the one who don't know what "indie" or" Metroidvania" is, "indie" mean
-      independent - the game is developed by individual/small team instead of a
-      big studio, and "Metroidvania" is a genre of game that focus on having an
-      open world with lots of exploration.
-    </aside>
-    <img
-      src="image/hollowKnight/exploration.png"
-      alt="dropping into the unknown"
-    />
-    <p>
-      Our character, the knight, set out into the ruined world of Hallownest.
-    </p>
-    <img src="image/hollowKnight/exploration2.png" alt="" />
-    <p>
-      Well, I will not provide more information than that. The good part of this
-      game is unveiling Hallownest mysteries by yourself. There is very few
-      hand-holding in Hollow Knight, to the point that half of your playtime
-      will be finding your way. And look how big the map is!
-    </p>
-    <img
-      src="image/hollowKnight/theworld.png"
-      alt="The kingdom of Hallownest"
-    />
-    <p>
-      The map the game give you is not very helpful. But to be honest,
-      constantly getting lost is the best part of this game. The world is so
-      detailed that getting lost usually means you would find something
-      interesting in a corner of the world.
-    </p>
-    <img src="image/hollowKnight/exploration3.png" alt="" />
-  </section>
-  <section>
-    <h2>Behold, MY PROFILES</h2>
-    <img src="image/hollowKnight/WallOfProfile.png" alt="" />
-  </section>
-</body>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Reinir</title>
+    <link rel="stylesheet" href="styles/styles.css" />
+    <script src="script/index.js"></script>
+  </head>
+  <body>
+    <header>
+      <h1>
+        Hello there. <br />
+        I'm Reinir. <br />
+        Nice to meet you.
+      </h1>
+      <nav>
+        <ul>
+          <li>
+            <a href="index.html"><button>Intro</button></a>
+          </li>
+          <li>
+            <a href="hollowKnight.html"
+              ><button class="active">Hollow Knight</button></a
+            >
+          </li>
+          <li>
+            <a href="#"
+              ><button onclick="randomMove()">I'm feeling lucky</button></a
+            >
+          </li>
+          <li>
+            <a href="#contact"><button>Contact me!</button></a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <section>
+      <h2>I like to play video game, so to today I will introduce you to...</h2>
+      <a href="#banner" onclick="hk_bannerReset();">
+        <img
+          id="banner"
+          class="banner"
+          src="image/hollowKnight/whoLikeHOLLOWKNIGHT.png"
+          alt="Hollow Knight banner"
+        />
+      </a>
+    </section>
+    <section>
+      <h2>Hollow Knight.</h2>
+      <a href="#banner">
+        <img
+          onclick="hk_setBanner(this)"
+          src="image/hollowKnight/theKnight.png"
+          alt="the knight on a bench"
+        />
+      </a>
+    </section>
+    <section>
+      <h2>
+        It's a small indie Metroidvania game make by Team Cherry, pulished in
+        2017.
+      </h2>
+      <a href="#banner">
+        <img
+          src="image/hollowKnight/exploration.png"
+          alt="dropping into the unknown"
+          onclick="hk_setBanner(this)"
+        />
+      </a>
+
+      <p>
+        For the one who don't know what "indie" or" Metroidvania" is, "indie"
+        mean independent - the game is developed by individual/small team
+        instead of a big studio, and "Metroidvania" is a genre of game that
+        focus on having an open world with lots of exploration.
+      </p>
+    </section>
+    <section>
+      <h2>
+        Our character, the knight, set out into the ruined world of Hallownest.
+      </h2>
+      <a href="#banner">
+        <img
+          src="image/hollowKnight/exploration2.png"
+          alt="Dangeous place"
+          onclick="hk_setBanner(this)"
+        />
+      </a>
+      <p>
+        Well, I will not provide more information than that. The good part of
+        this game is unveiling Hallownest mysteries by yourself. There is very
+        few hand-holding in Hollow Knight, to the point that half of your
+        playtime will be finding your way. And look how big the map is!
+      </p>
+      <img
+        class="banner"
+        src="image/hollowKnight/theworld.png"
+        alt="The kingdom of Hallownest"
+      />
+    </section>
+    <section>
+      <h2>And the map?</h2>
+      <a href="#banner">
+        <img
+          src="image/hollowKnight/exploration3.png"
+          alt="Getting lost"
+          onclick="hk_setBanner(this);"
+        />
+      </a>
+      <p>
+        The map the game give you is not very helpful. But to be honest,
+        constantly getting lost is the best part of this game. The world is so
+        detailed that getting lost usually means you would find something
+        interesting in a corner of the world.
+      </p>
+    </section>
+    <section>
+      <h2>Behold, MY PROFILES</h2>
+      <img
+        src="image/hollowKnight/WallOfProfile.png"
+        alt="my profile"
+        class="banner"
+      />
+    </section>
+    <footer id="contact">
+      <h2>My contact information</h2>
+      <ul>
+        <li>Discord : Reinir#0305</li>
+        <li>Email : blackwhitenxt@gmail.com</li>
+      </ul>
+    </footer>
+  </body>
+</html>

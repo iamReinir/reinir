@@ -1,48 +1,67 @@
 <!DOCTYPE html>
-<head>
-  <meta charset="utf-8" />
-  <link rel="stylesheet" href="styles/styles.css" />
-  <script src="script/index.js"></script>
-  <title>Reinir</title>
-</head>
-<body>
-  <header>
-    <h1>
-      Hello there. <br />
-      I'm Reinir. <br />
-      Nice to meet you.
-    </h1>
-    <button onclick="randomMove()">I'm feeling lucky</button>
-  </header>
-  <section id="introduction">
-    <h2>My name is Reinir.</h2>
-    <p>
-      I'm currently learning Software Engineer in University. Favorite
-      programming language is C++, even though they teach Java here...<br />
-      I'm a sophomore. University life has been eventful, not too eventful, but
-      good. <br />
-    </p>
-  </section>
-  <section id="music">
-    <h2>I proudly introduce to you, my favorite type of music</h2>
-    <iframe
-      id="video"
-      src="https://www.youtube.com/embed/ZhJDGJq2R6c"
-      title="My music!"
-      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-      allowfullscreen
-    ></iframe>
-    <aside>
-      You can press the <a href="#randomSong">Randomize</a> button below to get
-      to another song.
-    </aside>
-    <button onclick="changeVideo()">Randomize</button>
-  </section>
-  <footer>
-    <h2>My contact information</h2>
-    <ul>
-      <li>Discord : Reinir#0305</li>
-      <li>Email : blackwhitenxt@gmail.com</li>
-    </ul>
-  </footer>
-</body>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="styles/styles.css" />
+    <script src="script/index.js"></script>
+    <title>Reinir</title>
+  </head>
+  <body>
+    <header>
+      <h1>
+        Hello there. <br />
+        I'm Reinir. <br />
+        Nice to meet you.
+      </h1>
+      <nav>
+        <ul>
+          <li>
+            <a href="index.html"><button class="active">Intro</button></a>
+          </li>
+          <li>
+            <a href="hollowKnight.html"><button>Hollow Knight</button></a>
+          </li>
+          <li>
+            <a href="#"
+              ><button onclick="randomMove()">I'm feeling lucky</button></a
+            >
+          </li>
+          <li>
+            <a href="#contact"><button>Contact me!</button></a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <section id="introduction">
+      <h2>My name is Reinir.</h2>
+      <p>
+        I'm currently learning Software Engineer in University. Favorite
+        programming language is C++, even though they teach Java here...<br />
+        I'm a sophomore. University life has been eventful, not too eventful,
+        but good. <br />
+      </p>
+    </section>
+    <section id="music">
+      <h2>I proudly introduce to you, my favorite type of music</h2>
+      <iframe
+        id="video"
+        src="https://www.youtube.com/embed/ZhJDGJq2R6c"
+        title="My music!"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allowfullscreen
+      ></iframe>
+      <aside>
+        You can press the <a href="#randomSong">Randomize</a> button below to
+        get to another song.
+      </aside>
+      <button onclick="changeVideo()">Randomize</button>
+    </section>
+    <footer id="contact">
+      <h2>My contact information</h2>
+      <ul>
+        <li>Discord : Reinir#0305</li>
+        <li>Email : blackwhitenxt@gmail.com</li>
+      </ul>
+    </footer>
+  </body>
+</html>

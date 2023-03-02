@@ -23,8 +23,17 @@ function rng(min, max) {
   return Math.floor(Math.random() * (max - min + 1)) + min;
 }
 
-let urls = ["hollowKnight.html"];
+let urls = ["hollowKnight.html", "index.html"];
 
 function randomMove() {
   window.open(urls[rng(0, urls.length - 1)]);
+}
+
+function hk_setBanner(element) {
+  document.getElementById("banner").src = element.src;
+}
+
+function hk_bannerReset() {
+  document.getElementById("banner").src =
+    "image/hollowKnight/whoLikeHOLLOWKNIGHT.png";
 }

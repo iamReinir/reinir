@@ -20,21 +20,29 @@ header {
   padding: 20px;
   margin: 0px;
   width: 36rem;
-  height: 13rem;
+  height: 25rem;
   overflow: auto;
 }
 
 button {
   display: inline-block;
   background-color: rgb(240, 248, 255);
-  padding: 30px 10rem;
+  padding: 30px;
   border-radius: 7px;
   font-weight: bold;
   font-size: 1rem;
 }
 
-header button {
-  margin: auto;
+button.active {
+  background-color: rgb(131, 133, 134);
+}
+
+nav ul {
+  list-style-type: none;
+}
+nav button {
+  margin: 1%;
+  width: 50%;
 }
 section button {
   margin: 3rem;
@@ -80,7 +88,7 @@ a {
 
 iframe {
   display: block;
-  width: 32rem;
+  width: 95%;
   height: 20rem;
 }
 
@@ -102,10 +110,21 @@ header p {
   }
   header {
     width: 95%;
+    height: 14rem;
   }
-  header button {
-    float: right;
-    padding: 0.5rem 2rem;
+
+  nav li {
+    display: inline-block;
+    width: 24%;
+  }
+  nav a {
+    display: inline-block;
+    width: 100%;
+  }
+  nav button {
+    display: inline-block;
+    padding: 0.5rem 5%;
+    width: 100%;
   }
   section {
     width: 95%;
@@ -114,15 +133,16 @@ header p {
     float: left;
     display: inline-block;
     box-sizing: content-box;
-    width: 33%;
+    width: 32%;
     padding: 3rem 1rem;
     padding-bottom: 3rem;
     margin: 0px;
+    height: 100%;
   }
   aside {
-    float: left;
-    margin: 0.5rem;
-    width: 55%;
+    display: inline-block;
+    margin: 0;
+    width: 57%;
   }
   section button {
     display: inline-block;
@@ -131,8 +151,8 @@ header p {
   }
   p {
     display: inline-block;
-    width: 57%;
-    margin: 0;
+    width: 90%;
+    margin: auto;
   }
   iframe {
     display: inline-block;
@@ -141,5 +161,17 @@ header p {
   }
   footer {
     width: 97%;
+  }
+
+  img.banner {
+    display: block;
+    margin: auto;
+    width: 100%;
+  }
+
+  section img {
+    width: 60%;
+    display: inline-block;
+    margin: 0;
   }
 }
