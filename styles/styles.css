@@ -45,7 +45,8 @@ nav button {
   width: 50%;
 }
 section button {
-  margin: 3rem;
+  margin: 5% auto;
+  width: 50%;
 }
 button:hover {
   background-color: #d3d1d1;
