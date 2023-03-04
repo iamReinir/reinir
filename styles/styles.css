@@ -24,16 +24,19 @@ header {
   overflow: auto;
 }
 
-button {
+nav a {
   display: inline-block;
   background-color: rgb(240, 248, 255);
   padding: 30px;
   border-radius: 7px;
   font-weight: bold;
   font-size: 1rem;
+  color: #1f1e33;
+  width: 60%;
+  margin: 0.2rem;
 }
 
-button.active {
+.active {
   background-color: rgb(131, 133, 134);
 }
 
@@ -45,8 +48,11 @@ nav button {
   width: 50%;
 }
 section button {
+  display: inline-block;
   margin: 5% auto;
   width: 50%;
+  padding: 1rem;
+  font-size: 1rem;
 }
 button:hover {
   background-color: #d3d1d1;
@@ -84,7 +90,6 @@ aside {
 
 a {
   text-decoration: none;
-  color: red;
 }
 
 iframe {
@@ -118,14 +123,11 @@ header p {
     display: inline-block;
     width: 24%;
   }
+
   nav a {
     display: inline-block;
-    width: 100%;
-  }
-  nav button {
-    display: inline-block;
     padding: 0.5rem 5%;
-    width: 100%;
+    width: 90%;
   }
   section {
     width: 95%;
